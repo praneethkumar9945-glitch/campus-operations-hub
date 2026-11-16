@@ -1,0 +1,21 @@
+{
+  "source": [
+    "https://github.com/w00769291-a11y/admit-and-academy",
+    "https://github.com/Pallavi-web00/academia-trainer-portal",
+    "https://github.com/ananya29-lma/Administratio",
+    "https://github.com/AnanyaNJ-138-max/quick-run-71-main-main-main"
+  ],
+  "capabilities": [
+    { "capability": "application code and screens", "source": "four public GitHub repositories", "outcome": "migrate", "status": "pending", "next_action": "Integrate the base school suite with academic, administration, and finance modules." },
+    { "capability": "database schema", "source": "base repository Drizzle migration; other modules use browser storage", "outcome": "migrate", "status": "pending", "next_action": "Inspect the newly enabled Lovable Cloud schema and migrate required tables with scoped access." },
+    { "capability": "existing application records", "source": "browser storage in source apps; no exports supplied", "outcome": "pending", "status": "pending", "next_action": "Request sanitized JSON or CSV exports if records must be carried over." },
+    { "capability": "authentication identities", "source": "source profiles schema references auth users; no user export supplied", "outcome": "pending", "status": "pending", "next_action": "Request original user identity/profile exports after the preview if existing accounts need migration." },
+    { "capability": "authorization", "source": "no application role enforcement found in inspected source code", "outcome": "preserve", "status": "pending", "next_action": "Confirm and implement suitable role boundaries before exposing private school records." },
+    { "capability": "uploaded file bytes", "source": "source code contains static assets and a sample examination PDF; no user-upload export supplied", "outcome": "migrate", "status": "pending", "next_action": "Carry application assets and identify any user-uploaded files absent from the repositories." },
+    { "capability": "external providers and secrets", "source": "academic repository declares Gemini env variable but no active API call found; other integrations not detected", "outcome": "preserve", "status": "pending", "next_action": "Verify whether any provider calls or secrets are used in the complete source code." },
+    { "capability": "public endpoints and callbacks", "source": "no external endpoints or callbacks detected in source inspection", "outcome": "preserve", "status": "verified", "next_action": "None detected." },
+    { "capability": "webhooks and schedules", "source": "no webhooks or scheduled jobs detected in source inspection", "outcome": "preserve", "status": "verified", "next_action": "None detected." },
+    { "capability": "cutover", "source": "source GitHub repositories and existing Lovable preview", "outcome": "pending", "status": "pending", "next_action": "Keep source repositories unchanged; verify the merged preview before publishing." },
+    { "capability": "end-to-end verification", "source": "merged Lovable preview", "outcome": "pending", "status": "pending", "next_action": "Verify key screens and representative interactions after integration." }
+  ]
+}
